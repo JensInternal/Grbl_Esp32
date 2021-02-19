@@ -21,7 +21,7 @@
 
 #include <stdint.h>
 #include "src/Grbl.h"
-#include "Machines/4axis_xyza.h"
+#include "src/Machines/4axis_xyza.h"
 
 uint32_t earlier = 0;
 
