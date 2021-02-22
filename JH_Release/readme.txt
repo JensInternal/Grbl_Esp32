@@ -18,7 +18,7 @@ Erstellung eines Releases
 - git add -A (alle Änderungen integrieren)
 - git merge BartMain (mein lokales Repository und das von Bart GitHub mergen)
   Merge "bdring/Grbl_Esp32, Branch main" in mein GitHub Repository "JensInternal/Grbl_Esp32, Branch main"
-- git tag v2.6.z main (die Versionen fangen immer mit 2.6. an, solange die Hardware identisch bleibt)
+- git tag -a v2.6.z -m "Version note" (die Versionen fangen immer mit 2.6. an, solange die Hardware identisch bleibt)
 - git commit -am "Release Notes"
 - git push origin
 
