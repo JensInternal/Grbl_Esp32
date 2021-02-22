@@ -1,0 +1,74 @@
+[
+ {
+  "name": "G54",
+  "glyph": "home",
+  "filename": "/Positionierung/goG54.nc",
+  "target": "SD",
+  "class": "btn btn-primary",
+  "index": 0
+ },
+ {
+  "name": "ZUp",
+  "glyph": "arrow-up",
+  "filename": "/Positionierung/goUp.nc",
+  "target": "SD",
+  "class": "btn btn-info",
+  "index": 1
+ },
+ {
+  "name": "",
+  "glyph": "",
+  "filename": "",
+  "target": "",
+  "class": "",
+  "index": 2
+ },
+ {
+  "name": "",
+  "glyph": "",
+  "filename": "",
+  "target": "",
+  "class": "",
+  "index": 3
+ },
+ {
+  "name": "",
+  "glyph": "",
+  "filename": "",
+  "target": "",
+  "class": "",
+  "index": 4
+ },
+ {
+  "name": "",
+  "glyph": "",
+  "filename": "",
+  "target": "",
+  "class": "",
+  "index": 5
+ },
+ {
+  "name": "",
+  "glyph": "",
+  "filename": "",
+  "target": "",
+  "class": "",
+  "index": 6
+ },
+ {
+  "name": "",
+  "glyph": "",
+  "filename": "",
+  "target": "",
+  "class": "",
+  "index": 7
+ },
+ {
+  "name": "",
+  "glyph": "",
+  "filename": "",
+  "target": "",
+  "class": "",
+  "index": 8
+ }
+]
