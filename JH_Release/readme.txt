@@ -1,5 +1,3 @@
-22.02.2021 v2.6
-
 Fertig compilierte Grbl_ESP32 Firmware mit allen zugehörigen Dateien.
 
 Erstellung eines Releases
@@ -14,7 +12,7 @@ Erstellung eines Releases
 - Dateien aus dem WebUI in das Verzeichnis "JH_Release" kopieren
   - macrocfg.json
   - preferences.json
-- Anpassen dieser readme.txt
+- Anpassen dieser readme.txt mit neuer Versionsgeschichte
 - git add -A (alle Änderungen integrieren)
 - git merge BartMain (mein lokales Repository und das von Bart GitHub mergen)
   Merge "bdring/Grbl_Esp32, Branch main" in mein GitHub Repository "JensInternal/Grbl_Esp32, Branch main"
@@ -22,9 +20,13 @@ Erstellung eines Releases
 - git commit -am "Release Notes"
 - git push origin --tags
 
-Was macht dieses Release aus?
-GitHub Repository "JensInternal/Grbl_Esp32, Branch main", Tag v.2.6.1 mit allen Dateien des Releases
-- index.html.gz       (die Datei ist ebenfalls im Projektordner unter "Grbl_Esp32/data/index.html.gz")
+Welche exta Dateien gehören zu diesem Release?
+- GitHub Repository "JensInternal/Grbl_Esp32, Branch main", Tag v.2.6.1 mit allen Dateien des Releases
+- index.html.gz (die Datei ist im Projektordner unter "Grbl_Esp32/data/index.html.gz")
+- firmware.bin („.pio\build\release\firmware.bin“)
+- JH_Release/macrocfg.json (manuell runter- / hochladen über das WebUI)
+- JH_Release/preferences.json (manuell runter- / hochladen über das WebUI)
+- JH_Release/readme.txt (diese Datei)
 
 Versionsgeschichte
 - v2.6 22.02.2021 Initiales Release mit Ordner "JH_Release" und allen relevanten config-Dateien
