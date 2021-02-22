@@ -31,4 +31,4 @@ Welche exta Dateien gehören zu diesem Release?
 
 Versionsgeschichte
 - v2.6    22.02.2021 Initiales Release mit Ordner "JH_Release" und allen relevanten config-Dateien
-- v2.6.1  23.02.2021 Sorotec Z Probe von 40.8mm auf 40.9mm
+  Sorotec Z Probe von 40.8mm auf 40.9mm
