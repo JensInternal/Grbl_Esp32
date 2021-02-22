@@ -9,7 +9,7 @@ Erstellung eines Releases
 - Compilieren
   - "Build env:release" in VSCode
 - Testen
-- Dateien aus dem WebUI in das Verzeichnis "JH_Release" kopieren
+- Dateien aus dem WebUI in das Verzeichnis "JH_Release" kopieren oder hier anpassen
   - macrocfg.json
   - preferences.json
 - Anpassen dieser readme.txt mit neuer Versionsgeschichte
@@ -19,6 +19,7 @@ Erstellung eines Releases
 - git tag -a v2.6.z -m "Release note" (die Versionen fangen immer mit 2.6. an, solange die Hardware identisch bleibt)
 - git commit -am "Release Notes"
 - git push origin --tags
+- Firmware hochladen und macrocfg.json/preferences.json in den ESP32 hochladen
 
 Welche exta Dateien gehören zu diesem Release?
 - GitHub Repository "JensInternal/Grbl_Esp32, Branch main", Tag v.2.6.1 mit allen Dateien des Releases
@@ -29,4 +30,5 @@ Welche exta Dateien gehören zu diesem Release?
 - JH_Release/readme.txt (diese Datei)
 
 Versionsgeschichte
-- v2.6 22.02.2021 Initiales Release mit Ordner "JH_Release" und allen relevanten config-Dateien
+- v2.6    22.02.2021 Initiales Release mit Ordner "JH_Release" und allen relevanten config-Dateien
+- v2.6.1  23.02.2021 Sorotec Z Probe von 40.8mm auf 40.9mm
