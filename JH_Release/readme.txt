@@ -19,6 +19,7 @@ Erstellung eines Releases
 - git tag -a v2.6.z -m "Release note" (die Versionen fangen immer mit 2.6. an, solange die Hardware identisch bleibt)
 - git commit -am "Release Notes"
 - git push origin --tags
+- firmware.bin von „.pio\build\release\firmware.bin“ kopieren in "JH_Release"
 - Firmware hochladen und macrocfg.json/preferences.json in den ESP32 hochladen
 
 Welche exta Dateien gehören zu diesem Release?
