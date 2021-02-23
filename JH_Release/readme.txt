@@ -20,9 +20,9 @@ Erstellung eines Releases
 - git commit -am "Release Notes"
 - git push origin --tags
 - firmware.bin von „.pio\build\release\firmware.bin“ kopieren in "JH_Release"
-- Firmware hochladen und macrocfg.json/preferences.json in den ESP32 hochladen
+- Firmware hochladen (OTA durch den Button PlatformIO:Upload) und macrocfg.json/preferences.json über das WebUI in den ESP32 hochladen
 
-Welche exta Dateien gehören zu diesem Release?
+Welche extra Dateien gehören zu diesem Release?
 - GitHub Repository "JensInternal/Grbl_Esp32, Branch main", Tag v.2.6.1 mit allen Dateien des Releases
 - index.html.gz (die Datei ist im Projektordner unter "Grbl_Esp32/data/index.html.gz")
 - firmware.bin („.pio\build\release\firmware.bin“)
@@ -31,5 +31,6 @@ Welche exta Dateien gehören zu diesem Release?
 - JH_Release/readme.txt (diese Datei)
 
 Versionsgeschichte
-- v2.6    22.02.2021 Initiales Release mit Ordner "JH_Release" und allen relevanten config-Dateien
+- v2.6      22.02.2021 Initiales Release mit Ordner "JH_Release" und allen relevanten config-Dateien
   Sorotec Z Probe von 40.8mm auf 40.9mm
+- v2.6.0.1  23.02.2021 Sorotec Z Probe läuft 2x, schnell u. dann langsam

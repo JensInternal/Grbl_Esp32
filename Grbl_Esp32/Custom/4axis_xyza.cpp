@@ -82,13 +82,21 @@ void user_defined_macro(uint8_t index) {
                     grbl_sendf(CLIENT_ALL, "G17 G21 G91\r\n");
                     WebUI::inputBuffer.push("G17 G21 G91\r\n");
 
-					// Go 25mm deeper to hopefully hit alu plate
-                    grbl_sendf(CLIENT_ALL, "G38.2 Z-25.0 F50\r\n");
-                    WebUI::inputBuffer.push("G38.2 Z-25.0 F50\r\n");
+					// Go 30mm deeper to hopefully hit alu plate. High speed
+                    grbl_sendf(CLIENT_ALL, "G38.2 Z-30 F250\r\n");
+                    WebUI::inputBuffer.push("G38.2 Z-30 F250\r\n");
+
+					// Go 2mm up and try again, but slowier
+                    grbl_sendf(CLIENT_ALL, "G1 Z+2 F30\r\n");
+                    WebUI::inputBuffer.push("G1 Z+2 F30\r\n");
+
+					// Go 3mm deeper to hopefully hit alu plate. Low speed
+                    grbl_sendf(CLIENT_ALL, "G38.2 Z-3 F30\r\n");
+                    WebUI::inputBuffer.push("G38.2 Z-3 F30\r\n");
 
                     // Sorotec plate Z distance is 40.9mm, so adjust Z G54 WCS height. No X/Y WCS changes!!!
-                    grbl_sendf(CLIENT_ALL, "G10 L20 P0 Z+40.8\r\n");
-                    WebUI::inputBuffer.push("G10 L20 P0 Z+40.8\r\n");  // Set G54, only Z axis, on workpiece level, xx mm below alu plate
+                    grbl_sendf(CLIENT_ALL, "G10 L20 P0 Z+40.9\r\n");
+                    WebUI::inputBuffer.push("G10 L20 P0 Z+40.9\r\n");  // Set G54, only Z axis, on workpiece level, xx mm below alu plate
 
 					//Move up
                     grbl_sendf(CLIENT_ALL, "G53 G0 Z-5 F200\r\n");
