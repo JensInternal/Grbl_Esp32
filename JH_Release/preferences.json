@@ -19,7 +19,7 @@
   "enable_files_panel": "true",
   "probemaxtravel": "40",
   "probefeedrate": "100",
-  "probetouchplatethickness": "40.9",
+  "probetouchplatethickness": "40.95",
   "interval_positions": "1",
   "interval_status": "1",
   "xy_feedrate": "3000",
