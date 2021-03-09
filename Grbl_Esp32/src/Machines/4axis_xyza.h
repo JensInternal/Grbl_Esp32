@@ -84,7 +84,7 @@
  * it will call a function void user_tool_change(uint8_t new_tool) when it sees the M6 gcode command.
  */
 
-//#define USE_MACHINE_INIT
+#define USE_M30
 //#define USE_TOOL_CHANGE
 
 

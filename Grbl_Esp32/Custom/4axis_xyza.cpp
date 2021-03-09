@@ -25,6 +25,22 @@
 
 uint32_t earlier = 0;
 
+#ifdef USE_M30
+/*
+  user_m30() is called when an M30 gcode signals the end of a gcode file.
+*/
+void user_m30() {
+	// Z Up
+	WebUI::inputBuffer.push("M30 triggers user function Z up\n");
+	
+	grbl_sendf(CLIENT_ALL, "G90 G21\n");
+    WebUI::inputBuffer.push("G90 G21\n");  // Homing all axis
+
+	grbl_sendf(CLIENT_ALL, "G53 G0 Z-5 F200\n");
+    WebUI::inputBuffer.push("G53 G0 Z-5 F200\n");  // Homing all axis
+}
+#endif
+
 /*
   options.  user_defined_macro() is called with the button number to
   perform whatever actions you choose.

@@ -35,3 +35,4 @@ Versionsgeschichte
 - v2.6      22.02.2021 Initiales Release mit Ordner "JH_Release" und allen relevanten config-Dateien
   Sorotec Z Probe von 40.8mm auf 40.9mm
 - v2.6.0.1  23.02.2021 Sorotec Z Probe läuft 2x, schnell u. dann langsam
+- v2.6.0.2  09.03.2021 Akt. Merge mit Bart, M30=Z up
